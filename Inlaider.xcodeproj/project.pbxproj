@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E22BE5432E1C0046002D3215 /* AIProxy in Frameworks */ = {isa = PBXBuildFile; productRef = E22BE5422E1C0046002D3215 /* AIProxy */; };
+		E22BE5452E1C004A002D3215 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = E22BE5442E1C004A002D3215 /* KeyboardShortcuts */; };
+		E22BE5472E1C004F002D3215 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E22BE5462E1C004F002D3215 /* LaunchAtLogin */; };
+		E25219D82E0F1EA3002E7925 /* AIProxy in Frameworks */ = {isa = PBXBuildFile; productRef = E25219D72E0F1EA3002E7925 /* AIProxy */; };
+		E25219DB2E0F1EB6002E7925 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = E25219DA2E0F1EB6002E7925 /* KeyboardShortcuts */; };
+		E25219DE2E0F1ECA002E7925 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E25219DD2E0F1ECA002E7925 /* LaunchAtLogin */; };
+		E29E8EAD2E16F3B100DFBD48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E29E8EAC2E16F3AA00DFBD48 /* README.md */; };
+		E29E8EAF2E1720B500DFBD48 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E29E8EAE2E1720B500DFBD48 /* LICENSE */; };
+		E2CEDDF62E37DE730084A3EF /* ThirdPartyLicenses.md in Resources */ = {isa = PBXBuildFile; fileRef = E2CEDDF52E37DE730084A3EF /* ThirdPartyLicenses.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E25219672E0F1D92002E7925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E252194E2E0F1D91002E7925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25219552E0F1D91002E7925;
+			remoteInfo = Inlaider;
+		};
+		E25219712E0F1D92002E7925 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E252194E2E0F1D91002E7925 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25219552E0F1D91002E7925;
+			remoteInfo = Inlaider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E22BE5492E1C040A002D3215 /* Inlaider.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Inlaider.xctestplan; sourceTree = "<group>"; };
+		E25219562E0F1D91002E7925 /* Inlaider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inlaider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25219662E0F1D92002E7925 /* InlaiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InlaiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25219702E0F1D92002E7925 /* InlaiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InlaiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29E8EAC2E16F3AA00DFBD48 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E29E8EAE2E1720B500DFBD48 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E2CEDDF52E37DE730084A3EF /* ThirdPartyLicenses.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ThirdPartyLicenses.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E22BE5BD2E1C124B002D3215 /* Exceptions for "Inlaider" folder in "Inlaider" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E25219552E0F1D91002E7925 /* Inlaider */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E25219582E0F1D91002E7925 /* Inlaider */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E22BE5BD2E1C124B002D3215 /* Exceptions for "Inlaider" folder in "Inlaider" target */,
+			);
+			path = Inlaider;
+			sourceTree = "<group>";
+		};
+		E25219692E0F1D92002E7925 /* InlaiderTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InlaiderTests;
+			sourceTree = "<group>";
+		};
+		E25219732E0F1D92002E7925 /* InlaiderUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = InlaiderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E25219532E0F1D91002E7925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25219DE2E0F1ECA002E7925 /* LaunchAtLogin in Frameworks */,
+				E25219D82E0F1EA3002E7925 /* AIProxy in Frameworks */,
+				E25219DB2E0F1EB6002E7925 /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25219632E0F1D92002E7925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22BE5472E1C004F002D3215 /* LaunchAtLogin in Frameworks */,
+				E22BE5432E1C0046002D3215 /* AIProxy in Frameworks */,
+				E22BE5452E1C004A002D3215 /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E252196D2E0F1D92002E7925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E252194D2E0F1D91002E7925 = {
+			isa = PBXGroup;
+			children = (
+				E22BE5492E1C040A002D3215 /* Inlaider.xctestplan */,
+				E2CEDDF52E37DE730084A3EF /* ThirdPartyLicenses.md */,
+				E29E8EAE2E1720B500DFBD48 /* LICENSE */,
+				E29E8EAC2E16F3AA00DFBD48 /* README.md */,
+				E25219582E0F1D91002E7925 /* Inlaider */,
+				E25219692E0F1D92002E7925 /* InlaiderTests */,
+				E25219732E0F1D92002E7925 /* InlaiderUITests */,
+				E25219572E0F1D91002E7925 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E25219572E0F1D91002E7925 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E25219562E0F1D91002E7925 /* Inlaider.app */,
+				E25219662E0F1D92002E7925 /* InlaiderTests.xctest */,
+				E25219702E0F1D92002E7925 /* InlaiderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E25219552E0F1D91002E7925 /* Inlaider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E252197A2E0F1D92002E7925 /* Build configuration list for PBXNativeTarget "Inlaider" */;
+			buildPhases = (
+				E25219522E0F1D91002E7925 /* Sources */,
+				E25219532E0F1D91002E7925 /* Frameworks */,
+				E25219542E0F1D91002E7925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E25219582E0F1D91002E7925 /* Inlaider */,
+			);
+			name = Inlaider;
+			packageProductDependencies = (
+				E25219D72E0F1EA3002E7925 /* AIProxy */,
+				E25219DA2E0F1EB6002E7925 /* KeyboardShortcuts */,
+				E25219DD2E0F1ECA002E7925 /* LaunchAtLogin */,
+			);
+			productName = Inlaider;
+			productReference = E25219562E0F1D91002E7925 /* Inlaider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E25219652E0F1D92002E7925 /* InlaiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E252197D2E0F1D92002E7925 /* Build configuration list for PBXNativeTarget "InlaiderTests" */;
+			buildPhases = (
+				E25219622E0F1D92002E7925 /* Sources */,
+				E25219632E0F1D92002E7925 /* Frameworks */,
+				E25219642E0F1D92002E7925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25219682E0F1D92002E7925 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E25219692E0F1D92002E7925 /* InlaiderTests */,
+			);
+			name = InlaiderTests;
+			packageProductDependencies = (
+				E22BE5422E1C0046002D3215 /* AIProxy */,
+				E22BE5442E1C004A002D3215 /* KeyboardShortcuts */,
+				E22BE5462E1C004F002D3215 /* LaunchAtLogin */,
+			);
+			productName = InlaiderTests;
+			productReference = E25219662E0F1D92002E7925 /* InlaiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E252196F2E0F1D92002E7925 /* InlaiderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25219802E0F1D92002E7925 /* Build configuration list for PBXNativeTarget "InlaiderUITests" */;
+			buildPhases = (
+				E252196C2E0F1D92002E7925 /* Sources */,
+				E252196D2E0F1D92002E7925 /* Frameworks */,
+				E252196E2E0F1D92002E7925 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25219722E0F1D92002E7925 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E25219732E0F1D92002E7925 /* InlaiderUITests */,
+			);
+			name = InlaiderUITests;
+			packageProductDependencies = (
+			);
+			productName = InlaiderUITests;
+			productReference = E25219702E0F1D92002E7925 /* InlaiderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E252194E2E0F1D91002E7925 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					E25219552E0F1D91002E7925 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					E25219652E0F1D92002E7925 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E25219552E0F1D91002E7925;
+					};
+					E252196F2E0F1D92002E7925 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = E25219552E0F1D91002E7925;
+					};
+				};
+			};
+			buildConfigurationList = E25219512E0F1D91002E7925 /* Build configuration list for PBXProject "Inlaider" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				pl,
+				"en-GB",
+				ar,
+				ca,
+				"zh-Hans",
+				"zh-Hant",
+				hr,
+				cs,
+				da,
+				nl,
+				"en-AU",
+				"en-CA",
+				fi,
+				fr,
+				"fr-CA",
+				de,
+				el,
+				he,
+				hi,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				no,
+				nb,
+				"pt-BR",
+				"pl-PL",
+				"pt-PT",
+				ro,
+				ru,
+				sk,
+				"es-MX",
+				"es-ES",
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+			);
+			mainGroup = E252194D2E0F1D91002E7925;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E25219D62E0F1EA3002E7925 /* XCRemoteSwiftPackageReference "AIProxySwift" */,
+				E25219D92E0F1EB6002E7925 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				E25219DC2E0F1ECA002E7925 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E25219572E0F1D91002E7925 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E25219552E0F1D91002E7925 /* Inlaider */,
+				E25219652E0F1D92002E7925 /* InlaiderTests */,
+				E252196F2E0F1D92002E7925 /* InlaiderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E25219542E0F1D91002E7925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29E8EAF2E1720B500DFBD48 /* LICENSE in Resources */,
+				E2CEDDF62E37DE730084A3EF /* ThirdPartyLicenses.md in Resources */,
+				E29E8EAD2E16F3B100DFBD48 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25219642E0F1D92002E7925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E252196E2E0F1D92002E7925 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E25219522E0F1D91002E7925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25219622E0F1D92002E7925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E252196C2E0F1D92002E7925 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E25219682E0F1D92002E7925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25219552E0F1D91002E7925 /* Inlaider */;
+			targetProxy = E25219672E0F1D92002E7925 /* PBXContainerItemProxy */;
+		};
+		E25219722E0F1D92002E7925 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25219552E0F1D91002E7925 /* Inlaider */;
+			targetProxy = E25219712E0F1D92002E7925 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E25219782E0F1D92002E7925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E25219792E0F1D92002E7925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E252197B2E0F1D92002E7925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Inlaider/Inlaider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Inlaider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Inlaider;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Krzysztof S. Łukasik. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inlaider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E252197C2E0F1D92002E7925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = Inlaider/Inlaider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Inlaider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Inlaider;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2025 Krzysztof S. Łukasik. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inlaider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E252197E2E0F1D92002E7925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inlaider.InlaiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inlaider.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Inlaider";
+			};
+			name = Debug;
+		};
+		E252197F2E0F1D92002E7925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inlaider.InlaiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Inlaider.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Inlaider";
+			};
+			name = Release;
+		};
+		E25219812E0F1D92002E7925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inlaider.InlaiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Inlaider;
+			};
+			name = Debug;
+		};
+		E25219822E0F1D92002E7925 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 737Y2MW53H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.inlaider.InlaiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Inlaider;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E25219512E0F1D91002E7925 /* Build configuration list for PBXProject "Inlaider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25219782E0F1D92002E7925 /* Debug */,
+				E25219792E0F1D92002E7925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E252197A2E0F1D92002E7925 /* Build configuration list for PBXNativeTarget "Inlaider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E252197B2E0F1D92002E7925 /* Debug */,
+				E252197C2E0F1D92002E7925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E252197D2E0F1D92002E7925 /* Build configuration list for PBXNativeTarget "InlaiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E252197E2E0F1D92002E7925 /* Debug */,
+				E252197F2E0F1D92002E7925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25219802E0F1D92002E7925 /* Build configuration list for PBXNativeTarget "InlaiderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25219812E0F1D92002E7925 /* Debug */,
+				E25219822E0F1D92002E7925 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E25219D62E0F1EA3002E7925 /* XCRemoteSwiftPackageReference "AIProxySwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lzell/AIProxySwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.111.0;
+			};
+		};
+		E25219D92E0F1EB6002E7925 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		E25219DC2E0F1ECA002E7925 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E22BE5422E1C0046002D3215 /* AIProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25219D62E0F1EA3002E7925 /* XCRemoteSwiftPackageReference "AIProxySwift" */;
+			productName = AIProxy;
+		};
+		E22BE5442E1C004A002D3215 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25219D92E0F1EB6002E7925 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		E22BE5462E1C004F002D3215 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25219DC2E0F1ECA002E7925 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+		E25219D72E0F1EA3002E7925 /* AIProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25219D62E0F1EA3002E7925 /* XCRemoteSwiftPackageReference "AIProxySwift" */;
+			productName = AIProxy;
+		};
+		E25219DA2E0F1EB6002E7925 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25219D92E0F1EB6002E7925 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		E25219DD2E0F1ECA002E7925 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E25219DC2E0F1ECA002E7925 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E252194E2E0F1D91002E7925 /* Project object */;
+}

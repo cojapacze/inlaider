@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "64A64C43-2E10-4E10-BAB9-06E1AFBE39EA",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "AIPROXY_DEVICE_CHECK_BYPASS",
+        "value" : "fcdf4676-fc6c-444d-8b94-3f9acc781b40"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Inlaider.xcodeproj",
+      "identifier" : "E25219552E0F1D91002E7925",
+      "name" : "Inlaider"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "selectedTags" : {
+        "includeXCTests" : true
+      },
+      "target" : {
+        "containerPath" : "container:Inlaider.xcodeproj",
+        "identifier" : "E25219652E0F1D92002E7925",
+        "name" : "InlaiderTests"
+      }
+    }
+  ],
+  "version" : 1
+}
