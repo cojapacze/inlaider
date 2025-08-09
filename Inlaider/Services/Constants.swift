@@ -26,7 +26,7 @@ let AI_QUERY_SECONDS_TO_WAIT: UInt = 60;
 
 let DEFAULT_GENERAL_PROMPT = "Use - instead of —\nDo not add extra comments in your response"
 let DEFAULT_PROMPT_COMMAND_KEY = "default"
-let DEFAULT_PROVIDER_MODEL_NAME = "OpenAI/gpt-4.1"
+let DEFAULT_PROVIDER_MODEL_NAME = "OpenAI/gpt-5-nano"
 let DEFAULT_PROMPTS = [
     PromptShortcutItem(
         isEditable: false,

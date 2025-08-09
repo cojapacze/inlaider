@@ -12,6 +12,10 @@ class OpenAIProvider: AIProviderProtocol {
     let name = "OpenAI"
     let symbol = "brain"
     let defaultModels = [
+        "gpt-5",
+        "gpt-5-mini",
+        "gpt-5-nano",
+        "gpt-5-chat-latest",
         "gpt-4.1",
         "gpt-4.1-mini",
         "gpt-4.1-nano",
