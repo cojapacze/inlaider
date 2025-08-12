@@ -1,4 +1,5 @@
 # Inlaider
+<img src="assets/icon-256.png" alt="Inlaider icon" width="128" align="center">
 
 **Inlaider** is a humble macOS app that lets you quickly process selected text with AI—without leaving the context of your current application.
 
@@ -13,6 +14,7 @@
 | **Enter** | The text is processed by the AI model. |
 | **Enter** (when the command field is empty) | The result is returned to the source field (with **Accessibility** permission) or copied to the clipboard. |
 
+<img src="assets/demo_shorten.gif" alt="Inlaider demo" width="1024" align="center">
 ---
 
 ## Requirements
