@@ -68,7 +68,9 @@ struct CommandTextFieldRepresentable: NSViewRepresentable {
         var hints: [String]
         private var onSubmit: ((String) -> Void)?
         weak var textField: NSTextField?
-        
+        private var hintIndex: Int?
+        private var hintBasePrefix: String?
+
         init(text: Binding<String>,
              history: [String],
              hints: [String],
@@ -80,10 +82,15 @@ struct CommandTextFieldRepresentable: NSViewRepresentable {
             self.hints = hints
             self.onSubmit = onSubmit
         }
-        
+
         func controlTextDidChange(_ obj: Notification) {
             if let field = obj.object as? NSTextField {
                 self.text = field.stringValue
+                // reset the hint cycle after each user edit
+                hintIndex = nil
+                hintBasePrefix = nil
+                // reset also history cycle index
+                historyIndex = nil
             }
         }
         // seems to be redundant to the onFocusChange(true) event
@@ -98,6 +105,8 @@ struct CommandTextFieldRepresentable: NSViewRepresentable {
         private func submit() {
             onSubmit?(text)
             historyIndex = nil
+            hintIndex = nil
+            hintBasePrefix = nil
         }
 
         func control(_ control: NSControl, textView: NSTextView, doCommandBy selector: Selector) -> Bool {
@@ -108,32 +117,17 @@ struct CommandTextFieldRepresentable: NSViewRepresentable {
                 return true
 
             case #selector(NSResponder.insertTab(_:)):
-                if let hint = currentHint {
+                if let hint = currentHintSuffix {
                     text += hint
                     return true
                 }
                 return true
 
             case #selector(NSResponder.moveUp(_:)):
-                guard !history.isEmpty else { return true }
-                if historyIndex == nil {
-                    historyIndex = history.count - 1
-                } else if historyIndex! > 0 {
-                    historyIndex! -= 1
-                }
-                text = history[historyIndex!]
-                return true
+                return handleArrow(direction: "UP")
 
             case #selector(NSResponder.moveDown(_:)):
-                guard !history.isEmpty else { return true }
-                if let index = historyIndex, index < history.count - 1 {
-                    historyIndex = index + 1
-                    text = history[historyIndex!]
-                } else {
-                    historyIndex = nil
-                    text = ""
-                }
-                return true
+                return handleArrow(direction: "DOWN")
 
             default:
                 historyIndex = nil
@@ -141,11 +135,70 @@ struct CommandTextFieldRepresentable: NSViewRepresentable {
             return false
         }
 
+        private func handleArrow(direction: String) -> Bool {
+            
+            let isAllSelected: Bool = {
+                guard let tf = textField,
+                      let editor = tf.currentEditor() else { return false }
+                return editor.selectedRange.length == (tf.stringValue as NSString).length
+            }()
+
+            // rotate history
+            if text.isEmpty || isAllSelected {
+                guard !history.isEmpty else { return true }
+                if direction == "UP" {
+                    if historyIndex == nil {
+                        historyIndex = history.count - 1
+                    } else if historyIndex! > 0 {
+                        historyIndex! -= 1
+                    }
+                    text = history[historyIndex!]
+                } else if direction == "DOWN" {
+                    if let index = historyIndex, index < history.count - 1 {
+                        historyIndex = index + 1
+                        text = history[historyIndex!]
+                    } else {
+                        historyIndex = nil
+                        text = ""
+                    }
+                }
+                return true
+            }
+
+            // rotate hints
+            let base: String
+            if let existing = hintBasePrefix, text.hasPrefix(existing) {
+                base = existing
+            } else {
+                hintBasePrefix = text
+                base = text
+                hintIndex = nil
+            }
+
+            let matches = hints.filter { $0.hasPrefix(base) && $0 != base }
+            guard !matches.isEmpty else { return true }
+
+            if hintIndex == nil {
+                // first arrow hit - just show extended current hint
+                hintIndex = 0;
+            } else {
+                if direction == "UP" {
+                    hintIndex = (hintIndex! - 1 + matches.count) % matches.count
+                } else if direction == "DOWN" {
+                    hintIndex = (hintIndex! + 1) % matches.count
+                }
+            }
+
+            text = matches[hintIndex!]
+            historyIndex = nil
+            return true
+        }
+
 //        func focus() {
 //            textField?.window?.makeFirstResponder(textField)
 //        }
-//
-        private var currentHint: String? {
+
+        private var currentHintSuffix: String? {
             guard !text.isEmpty else { return nil }
             return hints.first(where: { $0.hasPrefix(text) && $0 != text })
                 .map { String($0.dropFirst(text.count)) }

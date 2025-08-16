@@ -1,50 +1,6 @@
 import SwiftUI
 import SwiftData
 
-class CommandModelStore: ObservableObject {
-    static let shared = CommandModelStore();
-    @Published var command = ""
-}
-
-struct CreditsTitleAccessory: View {
-    @Environment(\.openSettings) private var openSettings
-    private let aiProxyClient: AIProxyClient = .shared
-    @ObservedObject private var settingsStore: SettingsStore = SettingsStore.shared
-    private let commandHandler: CommandHandler = .shared
-    @StateObject var commandModelStore = CommandModelStore.shared
-    private var predictedModel: PromptShortcutItem {
-        return commandHandler.calculatePromptShortcutModel(for: commandModelStore.command)
-    }
-
-    var body: some View {
-
-        HStack {
-            Spacer()
-            HStack(spacing: 0) {
-                if (predictedModel.providerName == "static") {
-                    Text(" ")
-                        .font(.system(size: 12))
-                        .foregroundStyle(.secondary)
-                        .opacity(0.5)
-                } else {
-                    Text("\(predictedModel.providerName)/\(predictedModel.modelName)").font(.system(size: 12))
-                }
-             }
-            .opacity(0.9)
-            .onTapGesture {pGesture in
-                if (predictedModel.providerName == "static") {
-                    print("static");
-                } else {
-                    openSettings()
-                    settingsStore.settingsWindowSelectedTab = .providers
-                    settingsStore.settingsWindowProvidersSelectedTab = predictedModel.providerName
-                
-                }
-            }
-        }.padding(.horizontal, 8)
-    }
-}
-
 struct InlinePopupView: View {
     private let commandHandler: CommandHandler = .shared
     private let aiProxyClient: AIProxyClient = .shared
@@ -214,16 +170,14 @@ struct InlinePopupView: View {
                     Image(systemName: "circle.fill")
                         .foregroundColor(.accentColor)
                 }
-                Text(self.navigationHint)
-                    .opacity(NSApp.isActive ? 1 : 0)
-                Spacer()
-                Text(self.keyboardHint)
-                    .opacity(NSApp.isActive ? 1 : 0)
-                if let icon = InputsService.lastAppIcon {
-                    Image(nsImage: icon)
-                        .resizable()
-                        .frame(width: 12, height: 12)
-                        .cornerRadius(UI_INPUT_RADIUS)
+                if NSApp.isActive {
+                    Text(self.navigationHint)
+                        .help(self.navigationHint)
+                    Spacer()
+                    Text(self.keyboardHint)
+                        .help(self.keyboardHint)
+                } else {
+                    Text(" ")
                 }
             }.font(.caption).foregroundColor(Color.gray).lineLimit(1)
         }

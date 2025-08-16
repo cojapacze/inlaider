@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct InlaiderApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     static let sharedModelContainer: ModelContainer = {
         let schema = Schema([
             AIProviderConfigItem.self,

@@ -69,6 +69,6 @@ let DEFAULT_PROMPTS = [
     PromptShortcutItem(isEditable: true, command: "/csv",       prompt: "Convert the text into CSV format"),
     PromptShortcutItem(isEditable: true, command: "/explain",   prompt: "Explain the code step by step"),
     PromptShortcutItem(isEditable: true, command: "/terminal",  prompt: "You are a terminal assistant on macOS 15 or above. Type valid terminal commands that complete the user request. Try to use built-in commands first."),
-    PromptShortcutItem(isEditable: true, command: "/commit",   prompt: "Create clean commit message from description"),
+    PromptShortcutItem(isEditable: true, command: "/commit",    prompt: "Create clean commit message from description"),
 ]
 
