@@ -44,7 +44,7 @@ let DEFAULT_PROMPTS = [
     
     // writing tools
     PromptShortcutItem(isEditable: true, command: "/fix",       prompt: "Correct grammar and spelling"),
-    PromptShortcutItem(isEditable: true, command: "/short",     prompt: "Shorten the text by about 30 percent"),
+    PromptShortcutItem(isEditable: true, command: "/shorten",   prompt: "Shorten the text"),
     PromptShortcutItem(isEditable: true, command: "/expand",    prompt: "Expand the text with more detail and examples"),
     PromptShortcutItem(isEditable: true, command: "/formal",    prompt: "Rewrite in a formal tone"),
     PromptShortcutItem(isEditable: true, command: "/casual",    prompt: "Rewrite in a casual tone"),
@@ -68,6 +68,7 @@ let DEFAULT_PROMPTS = [
     PromptShortcutItem(isEditable: true, command: "/json",      prompt: "Convert the text into valid JSON"),
     PromptShortcutItem(isEditable: true, command: "/csv",       prompt: "Convert the text into CSV format"),
     PromptShortcutItem(isEditable: true, command: "/explain",   prompt: "Explain the code step by step"),
-    PromptShortcutItem(isEditable: true, command: "/terminal",  prompt: "You are a terminal assistant on macOS 15 or above. Type valid terminal commands that complete the user request."),
+    PromptShortcutItem(isEditable: true, command: "/terminal",  prompt: "You are a terminal assistant on macOS 15 or above. Type valid terminal commands that complete the user request. Try to use built-in commands first."),
+    PromptShortcutItem(isEditable: true, command: "/commit",   prompt: "Create clean commit message from description"),
 ]
 
